@@ -52,7 +52,10 @@
         "repository": "{{user `REPO`}}",
         "tag": "{{user `TAG`}}"
       },
-      "docker-push"
+      {
+        "type": "docker-push",
+        "login_server": "registry.cern.ch"
+      }
     ]
   ]
 }
